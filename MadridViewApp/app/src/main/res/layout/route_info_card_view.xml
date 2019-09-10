@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_margin="0dp"
+    android:clickable="false">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/routeSummaryCardView"
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="5dp"
+        card_view:cardElevation="8dp"
+        card_view:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/cardview_light_background"
+            android:padding="10dp">
+
+
+            <ImageButton
+                android:id="@+id/routeSummaryDestinationCancelButton"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_above="@+id/routeSummaryShowDetailsButton"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="73dp"
+                android:background="@android:color/white"
+                card_view:srcCompat="@android:drawable/ic_menu_close_clear_cancel" />
+
+            <TextView
+                android:id="@+id/routeSummaryDestinationName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/routeSummaryDestinationImage"
+                android:layout_marginStart="5dp"
+                android:layout_toEndOf="@+id/routeSummaryDestinationImage"
+                android:hint="@string/itemNameHint"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/routeSummaryDestinationTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/routeSummaryDestinationDistance"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@+id/routeSummaryDestinationImage"
+                android:hint="@string/destinationTimeHint" />
+
+            <TextView
+                android:id="@+id/routeSummaryDestinationDistance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/routeSummaryDestinationName"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@+id/routeSummaryDestinationImage"
+                android:hint="@string/destinationDurationHint" />
+
+            <ImageView
+                android:id="@+id/routeSummaryDestinationImage"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="16dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_white_pillar" />
+
+            <ImageButton
+                android:id="@+id/routeSummaryShowDetailsButton"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignBottom="@+id/routeSummaryDestinationImage"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="-1dp"
+                android:background="@android:color/white"
+                card_view:srcCompat="@android:drawable/ic_menu_directions" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

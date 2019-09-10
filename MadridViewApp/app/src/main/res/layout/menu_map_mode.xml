@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/mapMenuOptionsDialogTitle"
+        android:text="@string/titleMapModeDialog"
+        android:padding="15dp"
+        android:textStyle="bold"
+        android:textSize="18sp"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checkedButton="@id/normalMapModeRadioButton">
+
+        <RadioButton
+            android:id="@+id/normalMapModeRadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:drawableRight="?android:attr/listChoiceIndicatorSingle"
+            android:background="?android:selectableItemBackground"
+            android:layoutDirection="rtl"
+            android:layout_gravity="start"
+            android:textAlignment="textStart"
+            android:paddingBottom="10dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:paddingTop="10dp"
+            android:textSize="14sp"
+            android:text="@string/normalMapMode" />
+
+        <RadioButton
+            android:id="@+id/satelliteMapModeRadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:drawableRight="?android:attr/listChoiceIndicatorSingle"
+            android:background="?android:selectableItemBackground"
+            android:layoutDirection="rtl"
+            android:layout_gravity="start"
+            android:textAlignment="textStart"
+            android:paddingBottom="10dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:paddingTop="10dp"
+            android:textSize="14sp"
+            android:text="@string/satelliteMapMode" />
+
+        <RadioButton
+            android:id="@+id/terrainMapModeRadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:drawableRight="?android:attr/listChoiceIndicatorSingle"
+            android:background="?android:selectableItemBackground"
+            android:layoutDirection="rtl"
+            android:layout_gravity="start"
+            android:textAlignment="textStart"
+            android:paddingBottom="10dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:paddingTop="10dp"
+            android:textSize="14sp"
+            android:text="@string/terrainMapMode" />
+
+        <RadioButton
+            android:id="@+id/hybridMapModeRadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:drawableRight="?android:attr/listChoiceIndicatorSingle"
+            android:background="?android:selectableItemBackground"
+            android:layoutDirection="rtl"
+            android:layout_gravity="start"
+            android:textAlignment="textStart"
+            android:paddingBottom="10dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:paddingTop="10dp"
+            android:textSize="14sp"
+            android:text="@string/hybridMapMode" />
+
+    </RadioGroup>
+</LinearLayout>

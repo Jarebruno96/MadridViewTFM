@@ -1,0 +1,137 @@
+<resources>
+    <string name="app_name">MadridView</string>
+    <string name="iconLogoDescription">Icon logo description</string>
+    <string name="userNameHint">User name</string>
+    <string name="passwordHint">Password</string>
+    <string name="loginText">Log in</string>
+    <string name="registerText">Register</string>
+    <string name="forgotPasswordText">Forgot password...?</string>
+    <string name="mailHint">Mail</string>
+    <string name="setPasswordHint">Set password</string>
+    <string name="repeatPasswordHint">Repeat password</string>
+    <string name="submitText">Submit</string>
+    <string name="forgotPasswordExplanationText">Set the mail you have registered with</string>
+    <string name="mailNotValidErrorText">Mail is not valid</string>
+    <string name="passwordDontMatch">Passwords do not match</string>
+    <string name="incorrectPassword">Password not correct</string>
+    <string name="fieldIsEmpty">This field can not be empty</string>
+    <string name="unknownError">Unknown error on server</string>
+    <string name="internalError">Internal error</string>
+    <string name="mailNotFound">Mail not found</string>
+    <string name="userNotFound">User not found</string>
+    <string name="newPasswordSent">New password has been sent to mail account</string>
+    <string name="userNameNotAvailable">User name not available</string>
+    <string name="mailNotAvailable">Mail not available</string>
+    <string name="registerCompleted">Register completed</string>
+    <string name="homeFragmentTitle">Home</string>
+    <string name="profileFragmentTitle">Profile</string>
+    <string name="settingsFragmentTitle">Settings</string>
+    <string name="favouriteFragmentTitle">Favourites</string>
+    <string name="favouritesItemText">Favourites</string>
+    <string name="closeSessionItemText">Close Session</string>
+    <string name="settingsItemText">Settings</string>
+    <string name="backButtonPressedText">Press back button another time to exit</string>
+    <string name="unknownText">Unknown</string>
+    <string name="title_activity_home">@string/app_name</string>
+    <string name="changePasswordText">Change Password</string>
+    <string name="changePasswordExplanationText">For security reasons, you need to set your old password and write twice your new password</string>
+    <string name="deactivateAccountText">Deactivate Account</string>
+    <string name="deactivateAccountExplanationText">If you deactivate your account, it will be removed in 30 days if you do not login again</string>
+    <string name="oldPasswordText">Set old password</string>
+    <string name="passwordChangedText">Password changed</string>
+    <string name="cautionText">Caution</string>
+    <string name="deactivateDialogMessage">Are you sure you want to deactivate your account?</string>
+    <string name="activateDialogMessage">Are you sure you want to activate your account?</string>
+    <string name="deactivatedAccountText">Account deactivated</string>
+
+    <string name="userNameSharedPreferences">userName</string>
+    <string name="mailSharedPreferences">mail</string>
+    <string name="passwordSharedPreferences">password</string>
+    <string name="verifiedSharedPreferences">verified</string>
+    <string name="activatedSharedPreferences">activated</string>
+    <string name="dateInSharedPreferences">dateIn</string>
+
+
+    <string name="activationCompleted">Activation completed</string>
+    <string name="positiveAnswer">Yes</string>
+    <string name="negativeAnswer">No</string>
+    <string name="closeSessionDialogMessage">Are you sure you want to close your session?</string>
+    <string name="removeFromFavouritesDialogMessage">Are you sure you want to remove this item from favourites?</string>
+    <string name="verifiedText">Verified</string>
+    <string name="notVerifiedText">Not verified</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="titleMapModeDialog">Choose map style</string>
+    <string name="normalMapMode">Normal mode</string>
+    <string name="terrainMapMode">Terrain mode</string>
+    <string name="hybridMapMode">Hybrid mode</string>
+    <string name="satelliteMapMode">Satellite mode</string>
+    <string name="closeItemsNotFoundText">Close items not found</string>
+
+    <string name="searchMuseums">searchMuseums</string>
+    <string name="searchMonuments">searchMonuments</string>
+    <string name="searchChurches">searchChurches</string>
+    <string name="searchParks">searchParks</string>
+    <string name="searchTouristOffice">searchOffice</string>
+
+    <string name="parkMarkerColor">parkMarkerColor</string>
+    <string name="museumMarkerColor">museumMarkerColor</string>
+    <string name="touristOfficeMarkerColor">touristMarkerColor</string>
+    <string name="churchMarkerColor">churchMarkerColor</string>
+    <string name="monumentMarkerColor">monumentMarkerColor</string>
+    <string name="destinationMarkerColor">destinationMarkerColor</string>
+
+    <string name="routeDetailsDialogTitle">Route details</string>
+
+    <string name="churchType">Iglesia católica</string>
+    <string name="monumentType">Monumento</string>
+    <string name="museumType">Museo</string>
+    <string name="touristOfficeType">Oficina de Turismo</string>
+    <string name="parkType">Parque</string>
+
+    <string name="churchesText">Churches</string>
+    <string name="monumentsText">Monuments</string>
+    <string name="museumsText">Museums</string>
+    <string name="touristOfficesText">Tourist Offices</string>
+    <string name="parksText">Parks</string>
+    <string name="destinationText">Destination</string>
+
+    <string name="closeDistance">closeDistance</string>
+    <string name="tryAgain">Try again</string>
+    <string name="searchingRoute">Searching route</string>
+
+
+    <string name="itemNameHint">Item name</string>
+    <string name="itemTypeHint">Item type</string>
+    <string name="itemDescriptionTitle">Item description</string>
+    <string name="goButtonText">Go</string>
+    <string name="favouriteButtonText">Favourite</string>
+    <string name="addressTitle">Address</string>
+    <string name="scheduleTitle">Schedule</string>
+    <string name="servicesTitle">Services</string>
+    <string name="ocupationTitle">Ocupation</string>
+    <string name="searchItemHint">Search ...</string>
+    <string name="destinationTimeHint">Time to destination</string>
+    <string name="destinationDurationHint">Meters to destination</string>
+
+    <string name="sectionTypeHint">Section type</string>
+    <string name="stepDescriptionHint">Step description</string>
+    <string name="closeText">Close</string>
+
+    <string name="whatToShowCardViewTitle">What to show</string>
+    <string name="markerColorsCardViewTitle">Marker colors</string>
+    <string name="closeDistanceCardViewTitle">Close distance</string>
+    <string name="setCloseDistanceHint">Set close distance</string>
+
+    <string name="newFavouriteItemAdded">Item added to favourites</string>
+    <string name="newFavouriteItemAddedError">Can not add item to favourites</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="GOOOGLE_MAP_API_KEY">AIzaSyAGjISacpozx0jkhEMOxBJZUC9tZ9-cgjA</string>
+
+</resources>

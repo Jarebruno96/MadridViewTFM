@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ProfileFragment"
+    android:paddingTop="?attr/actionBarSize"
+    android:focusableInTouchMode="true"
+    android:id="@+id/profileFragmentLayout">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="25dp">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:contentDescription="@string/iconLogoDescription"
+                app:srcCompat="@drawable/logo_user_black" />
+
+            <TextView
+                android:id="@+id/profileUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/profileMail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textAlignment="center" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginBottom="5dp"
+                android:gravity="center_vertical|center_horizontal|center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/profileUserStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:text=""
+                    android:textAlignment="center" />
+
+                <ImageView
+                    android:id="@+id/profileUserStatusIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/profileUserStatus"
+                    android:contentDescription="TODO" />
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardCornerRadius="5dp"
+                card_view:cardElevation="8dp"
+                card_view:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/profileChangePasswordTitle"
+                        style="@style/TitleTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/changePasswordText" />
+
+                    <View
+                        style="@style/DividerStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp" />
+
+                    <TextView
+                        android:id="@+id/profileChangePasswordExplanation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/changePasswordExplanationText" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/profileOldPasswordLayout"
+                        style="@style/TextInputLayoutStyle">
+
+                        <Elements.RegularEditText
+                            android:id="@+id/profileOldPasswordInput"
+                            style="@style/EditTextPrimaryStyle"
+                            android:drawableStart="@drawable/icon_lock"
+                            android:hint="@string/oldPasswordText"
+                            android:inputType="textPassword" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/profileNewPassword1Layout"
+                        style="@style/TextInputLayoutStyle">
+
+                        <Elements.RegularEditText
+                            android:id="@+id/profileNewPassword1Input"
+                            style="@style/EditTextPrimaryStyle"
+                            android:drawableStart="@drawable/icon_lock"
+                            android:hint="@string/setPasswordHint"
+                            android:inputType="textPassword" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/profileNewPassword2Layout"
+                        style="@style/TextInputLayoutStyle">
+
+                        <Elements.RegularEditText
+                            android:id="@+id/profileNewPassword2Input"
+                            style="@style/EditTextPrimaryStyle"
+                            android:drawableStart="@drawable/icon_lock"
+                            android:hint="@string/repeatPasswordHint"
+                            android:inputType="textPassword" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <Button
+                        android:id="@+id/profileChangePasswordButton"
+                        style="@style/ButtonPrimaryContainedStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:onClick="onChangePasswordButtonClick"
+                        android:text="@string/changePasswordText" />
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardCornerRadius="5dp"
+                card_view:cardElevation="8dp"
+                card_view:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/profileDeactiveAccountTitle"
+                        style="@style/TitleTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/deactivateAccountText" />
+
+                    <View
+                        style="@style/DividerStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp" />
+
+                    <TextView
+                        android:id="@+id/profileDeactivateAccountExplanation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/deactivateAccountExplanationText" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/profilePasswordLayout"
+                        style="@style/TextInputLayoutStyle">
+
+                        <Elements.RegularEditText
+                            android:id="@+id/profilePasswordInput"
+                            style="@style/EditTextPrimaryStyle"
+                            android:drawableStart="@drawable/icon_lock"
+                            android:hint="@string/passwordHint"
+                            android:inputType="textPassword" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <Button
+                        android:id="@+id/profileDeactivateAccountButton"
+                        style="@style/ButtonAlertContainedStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="@string/deactivateAccountText" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,146 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryVariant</item>
+        <item name="colorAccent">@color/colorSecondaryVariant</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:activatedBackgroundIndicator">@drawable/selected_item_background</item>
+        <item name="android:listDivider">@android:color/black</item>
+    </style>
+
+    <style name="TextInputLayoutStyle">
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:gravity">bottom</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:clipToPadding">false</item>
+    </style>
+
+    <style name="EditTextSecondaryStyle">
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:drawablePadding">5dp</item>
+        <item name="android:background">@drawable/st_edit_text_secondary</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@color/colorSecondary</item>
+        <item name="android:textColorHint">@color/colorAccentSecondary</item>
+        <item name="android:state_single">true</item>
+    </style>
+
+    <style name="EditTextPrimaryStyle">
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:drawablePadding">5dp</item>
+        <item name="android:background">@drawable/st_edit_text_secondary</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@color/colorSecondarySecondaVariant</item>
+        <item name="android:textColorHint">@color/colorAccentSecondary</item>
+        <item name="android:state_single">true</item>
+        <item name="android:textCursorDrawable">@null</item>
+
+    </style>
+
+    <style name="ButtonPrimaryContainedStyle">
+        <item name="android:textColor">@color/colorSecondary</item>
+        <item name="android:background">@drawable/st_button_secondary_contained</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:layout_marginStart">5dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ButtonAlertContainedStyle" parent="ButtonPrimaryContainedStyle">
+        <item name="android:background">@drawable/st_button_alert_contained</item>
+    </style>
+
+    <style name="ButtonPrimaryOutlinedStyle">
+        <item name="android:textColor">@color/colorSecondary</item>
+        <item name="android:background">@drawable/st_button_secondary_outlined</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:layout_marginStart">10dp</item>
+        <item name="android:textStyle">bold</item>
+
+    </style>
+
+    <style name="ButtonPrimaryNoOutlinedStyle" parent="ButtonPrimaryOutlinedStyle">
+        <item name="android:background">@drawable/st_button_secondary_no_outlined</item>
+    </style>
+
+    <style name="TextViewLogoSecondaryStyle">
+        <item name="android:textSize">25sp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/colorSecondary</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+    </style>
+
+    <style name="ExplanationTextSecondaryStyle">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/colorSecondary</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+    </style>
+
+    <style name="TitleTextStyle">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@color/colorTitleText</item>
+    </style>
+
+    <style name="ToolbarLight" parent="Theme.AppCompat.NoActionBar">
+        <!-- android:textColorPrimary is the  color of the title text
+             in the Toolbar, in the Theme.AppCompat theme:  -->
+        <item name="android:textColorPrimary">@color/abc_primary_text_material_light</item>
+
+        <!-- android:textColorPrimaryInverse is the  color of the title
+             text in the Toolbar, in the Theme.AppCompat.Light theme:  -->
+        <!-- <item name="android:textColorPrimaryInverse">@color/abc_primary_text_material_light</item> -->
+
+        <!-- android:actionMenuTextColor is the color of the text of
+              action (menu) items in the Toolbar, at least in the
+              Theme.AppCompat theme.
+              For some reason, they already get the textColorPrimary
+              when running on API 21, but not on older versions of
+              Android, so this is only necessary to support older
+              Android versions.-->
+        <item name="actionMenuTextColor">@color/abc_primary_text_material_light</item>
+        <!-- android:textColorSecondary is the color of the menu
+             overflow icon (three vertical dots) -->
+        <item name="android:textColorSecondary">@color/abc_secondary_text_material_light</item>
+
+        <!-- This would set the toolbar's background color,
+              but setting this also changes the popup menu's background,
+              even if we define popupTheme for our <Toolbar> -->
+        <item name="android:background">@android:color/transparent</item>
+
+    </style>
+
+    <style name="SecondaryRoundedButton">
+        <item name="android:background">@drawable/st_round_button</item>
+    </style>
+
+    <style name="DividerStyle">
+        <item name="android:background">@color/colorAccentSecondary</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

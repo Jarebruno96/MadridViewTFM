@@ -1,0 +1,8 @@
+ERROR CODES:
+	1: Internal error
+	2: User not found
+	3: Incorrect password
+	4: Username already exists
+	5: Mail already exists
+	6: Passwords are not the same
+	7: Mail not found

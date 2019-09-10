@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardViewLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="0dp"
+    android:clickable="false">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/itemCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="5dp"
+        card_view:cardElevation="8dp"
+        card_view:cardUseCompatPadding="true">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/aaa">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/cardview_light_background"
+                android:padding="10dp">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </ScrollView>
+
+                <ImageView
+                    android:id="@+id/cardViewItemImage"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="16dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/icon_white_pillar" />
+
+                <TextView
+                    android:id="@+id/cardViewItemName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/cardViewItemImage"
+                    android:hint="@string/itemNameHint"
+                    android:textColorHint="@color/cardview_dark_background"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/cardViewItemType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/cardViewItemName"
+                    android:layout_toRightOf="@+id/cardViewItemImage"
+                    android:hint="@string/itemTypeHint" />
+
+                <Button
+                    android:id="@+id/cardViewFavouriteButton"
+                    style="@style/ButtonPrimaryContainedStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/cardViewItemType"
+                    android:layout_marginTop="3dp"
+                    android:layout_toEndOf="@+id/cardViewItemImage"
+                    android:text="@string/favouriteButtonText" />
+
+                <Button
+                    android:id="@+id/cardViewGoButton"
+                    style="@style/ButtonPrimaryContainedStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/cardViewFavouriteButton"
+                    android:layout_toEndOf="@+id/cardViewFavouriteButton"
+                    android:text="@string/goButtonText" />
+
+                <TextView
+                    android:id="@+id/cardViewItemDescriptionTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/cardViewItemImage"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginTop="126dp"
+                    android:text="@string/itemDescriptionTitle"
+                    android:textColor="@color/cardview_dark_background" />
+
+                <TextView
+                    android:id="@+id/cardViewItemDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/cardViewItemDescriptionTitle"
+                    android:layout_alignStart="@+id/cardViewItemDescriptionTitle"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginTop="11dp"
+                    android:hint="@string/unknownText" />
+
+                <TextView
+                    android:id="@+id/cardViewItemAdressTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/cardViewItemDescription"
+                    android:layout_alignStart="@+id/cardViewItemDescriptionTitle"
+                    android:layout_marginTop="11dp"
+                    android:text="@string/addressTitle"
+                    android:textColor="@color/cardview_dark_background" />
+
+                <TextView
+                    android:id="@+id/cardViewItemAdress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/cardViewItemAdressTitle"
+                    android:layout_alignStart="@+id/cardViewItemImage"
+                    android:layout_marginTop="11dp"
+                    android:hint="@string/unknownText" />
+
+                <TextView
+                    android:id="@+id/cardViewItemScheduleTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/cardViewItemAdress"
+                    android:layout_alignStart="@+id/cardViewItemImage"
+                    android:layout_marginTop="11dp"
+                    android:text="@string/scheduleTitle"
+                    android:textColor="@color/cardview_dark_background" />
+
+                <TextView
+                    android:id="@+id/cardViewItemSchedule"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/cardViewItemScheduleTitle"
+                    android:layout_marginTop="11dp"
+                    android:hint="@string/unknownText" />
+
+                <TextView
+                    android:id="@+id/cardViewItemServicesTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/cardViewItemSchedule"
+                    android:layout_marginTop="11dp"
+                    android:text="@string/servicesTitle"
+                    android:textColor="@color/cardview_dark_background" />
+
+                <TextView
+                    android:id="@+id/cardViewItemServices"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/cardViewItemServicesTitle"
+                    android:layout_marginTop="11dp"
+                    android:hint="@string/unknownText" />
+
+                <TextView
+                    android:id="@+id/cardViewItemOcupationTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/cardViewItemServices"
+                    android:layout_alignStart="@+id/cardViewItemDescriptionTitle"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="11dp"
+                    android:text="@string/ocupationTitle"
+                    android:textColor="@color/cardview_dark_background" />
+
+                <com.github.mikephil.charting.charts.BarChart
+                    android:id="@+id/cardViewItemOcupationChart"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_below="@+id/cardViewItemOcupationTitle"
+                    android:layout_alignStart="@+id/cardViewItemDescription"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="11dp" />
+
+            </RelativeLayout>
+
+        </ScrollView>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

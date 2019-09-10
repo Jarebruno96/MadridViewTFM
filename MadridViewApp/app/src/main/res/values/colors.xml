@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#42A5F5</color>
+    <color name="colorPrimaryVariant">#1E88E5</color>-->
+    <color name="colorPrimary">#82B1FF</color>
+    <color name="colorPrimaryVariant">#2962ff</color>
+
+    <color name="colorSecondary">#ffffff</color>
+    <color name="colorSecondaryVariant">#80d0e0e0</color>
+    <color name="colorSecondarySecondaVariant">#424242</color>
+
+    <color name="colorError">#d32f2f</color>
+
+    <color name="colorAccent">#ffffff</color>
+    <color name="colorAccentPrimary">@null</color>
+    <color name="colorAccentSecondary">#bdbdbd</color>
+
+
+    <color name="colorHomeMenuItems">#424242</color>
+    <color name="colorTitleText">#424242</color>
+    <color name="colorDialogAnswers">#424242</color>
+    <color name="colorSelectedItemSlideMenu">#EEEEEE</color>
+    <color name="colorHomeMenuBackground">#ffffff</color>
+</resources>

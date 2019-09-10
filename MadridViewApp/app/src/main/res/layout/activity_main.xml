@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/st_bg_primary"
+    android:fitsSystemWindows="true"
+    android:focusableInTouchMode="true">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center_vertical|center_horizontal|center"
+            android:orientation="vertical"
+            android:padding="30dp">
+
+            <ImageView
+                android:id="@+id/mainLogoImageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:contentDescription="@string/iconLogoDescription"
+                app:srcCompat="@drawable/icon_white_pillar" />
+
+            <TextView
+                android:id="@+id/mainNameTextView"
+                style="@style/TextViewLogoSecondaryStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="@string/app_name" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/mainUserNameLayout"
+                style="@style/TextInputLayoutStyle">
+
+                <Elements.RegularEditText
+                    android:id="@+id/mainUserNameInput"
+                    style="@style/EditTextSecondaryStyle"
+                    android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890"
+                    android:drawableStart="@drawable/icon_user"
+                    android:hint="@string/userNameHint"
+                    android:inputType="textFilter" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/mainPasswordLayout"
+                style="@style/TextInputLayoutStyle">
+                <Elements.RegularEditText
+                    android:id="@+id/mainPasswordInput"
+                    style="@style/EditTextSecondaryStyle"
+                    android:drawableStart="@drawable/icon_lock"
+                    android:hint="@string/passwordHint"
+                    android:inputType="textPassword" />
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:orientation="vertical"
+                android:padding="0dp">
+
+                <Button
+                    android:id="@+id/mainForgotPasswordButton"
+                    style="@style/ButtonPrimaryNoOutlinedStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_gravity="start"
+                    android:layout_margin="0dp"
+                    android:onClick="onForgotPasswordButtonClick"
+                    android:text="@string/forgotPasswordText"
+                    android:textAllCaps="false"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="end">
+
+                <Button
+                    android:id="@+id/mainRegisterButton"
+                    style="@style/ButtonPrimaryOutlinedStyle"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="10dp"
+                    android:onClick="onRegisterButtonClick"
+                    android:text="@string/registerText" />
+
+                <Button
+                    android:id="@+id/mainLoginButton"
+                    style="@style/ButtonPrimaryContainedStyle"
+                    android:layout_gravity="end"
+                    android:onClick="onLoginButtonClick"
+                    android:text="@string/loginText" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.design.widget.CoordinatorLayout>
