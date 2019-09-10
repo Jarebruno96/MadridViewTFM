@@ -1,12 +1,12 @@
 mongoCfg = {
 	'host' : 'localhost',
 	'user' : 'mongoUser',
-	'password' : 'MadridView1234' 
+	'password' : '' 
 }
 
 googleCustomSearchCfg = {
-	'developerKey' : 'AIzaSyAGjISacpozx0jkhEMOxBJZUC9tZ9-cgjA',
-	'searchEngineId' : '003983869379727669651:goxxjvg5hoe',
+	'developerKey' : '',
+	'searchEngineId' : '',
 	'searchType':'image',
 	'num':1,
 	'fileType':'png',
