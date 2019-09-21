@@ -35,7 +35,11 @@ import HttpHandler.DownloadImageTask;
 import HttpHandler.VolleyCallback;
 import HttpHandler.HttpHandler;
 import Item.ItemTag;
+import ListenerInterfaces.OnMyLocationChangedEventListener;
+import PubSub.EventNotifier;
+import PubSub.Publisher;
 import User.User;
+import Utils.AppUtils;
 import Utils.ServerDataUtils;
 /*
  *
@@ -43,12 +47,14 @@ import Utils.ServerDataUtils;
  *
  * */
 
-public class MarkerInfoWindowAdapter implements GoogleMap.InfoWindowAdapter {
+public class MarkerInfoWindowAdapter implements GoogleMap.InfoWindowAdapter, OnMyLocationChangedEventListener
+{
 
     private Context context;
     private View infoWindow;
     private MapWrapperLayout mapWrapperLayout;
     DirectionManager directionManager;
+    private LatLng origin;
 
     private final static String TAG = "MarkerInfoWindowAdapter";
 
@@ -57,6 +63,8 @@ public class MarkerInfoWindowAdapter implements GoogleMap.InfoWindowAdapter {
         this.mapWrapperLayout = mapWrapperLayout;
         this.directionManager = new DirectionManager(context);
         this.infoWindow =  ((Activity) context).getLayoutInflater().inflate(R.layout.item_info_card_view, null);
+
+        EventNotifier.subscribe(this, AppUtils.ON_MY_LOCATION_CHANGED_ACTION);
 
     }
 
@@ -267,7 +275,9 @@ public class MarkerInfoWindowAdapter implements GoogleMap.InfoWindowAdapter {
         Log.d(TAG, "Searching new route: "+marker.getTitle());
 
         if(directionManager.getAccessToken()!=null){
-            directionManager.getDirection(new LatLng(40.417955, -3.714312), marker.getPosition(), (ItemTag) marker.getTag());
+
+            if(origin!=null)
+                directionManager.getDirection(origin, marker.getPosition(), (ItemTag) marker.getTag());
         }
 
     }
@@ -306,4 +316,19 @@ public class MarkerInfoWindowAdapter implements GoogleMap.InfoWindowAdapter {
         }
     }
 
+    @Override
+    public void onMyLocationPublished(JSONObject location) {
+
+        Log.d(TAG, "Guardo nueva localizacion");
+        try {
+                double latitude = location.getDouble("latitude");
+                double longitude = location.getDouble("longitude");
+
+                origin = new LatLng(latitude, longitude);
+
+
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+    }
 }
